@@ -104,15 +104,15 @@ namespace Project1
         #endregion
 
         #region Methods
-        public void GoingUp()
+        public void Moving(int fromFloor, int toFloor)
         {
 
         }
 
-        public void GoingDown()
-        {
+        //public void GoingDown(int fromFloor, int toFloor)
+        //{
 
-        }
+        //}
 
         public void Reset()
         {
@@ -121,17 +121,21 @@ namespace Project1
 
         public void PressesUp()
         {
-
+            // Check floor of elevator
+            // Check floor of occupant
+            // Call elevator method for going up or down
         }
 
         public void PressesDown()
         {
-            // Check floor
+            // Check floor of elevator
+            // Check floor of occupant
+            // Call elevator method for going up or down
         }
 
         public void PressesFloor(int destination)
         {
-
+            Moving(CurrentFloor, destination);
         }
 
         public bool PressesEmergency(bool pressed)
